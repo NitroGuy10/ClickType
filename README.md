@@ -1,5 +1,5 @@
 # ClickType
----
+
 It makes a click sound whenever you press a key
 
 ### FAQ:
