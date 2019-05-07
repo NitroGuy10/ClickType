@@ -4,12 +4,13 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.js"></script>
         <script>
-            document.onkeypress = function(){mySound.play()};
+            document.onkeydown = function(){down.play()};
+			document.onkeyup = function(){up.play()};
             function setup() {
-soundFormats('mp3');
-  mySound = loadSound("https://raw.githubusercontent.com/NitroGuy10/ClickType/master/Stapler-SoundBible.com-374581609.mp3");
+soundFormats('wav');
+  down = loadSound("down.wav");
+  up = loadSound("up.wav");
 }
-
 function draw() {
   mySound.setVolume(0.1);
 }
