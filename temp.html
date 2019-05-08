@@ -4,7 +4,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.js"></script>
         <script>
-            document.onkeypress = function(){down.play()};
+            document.onkeydown = function(){down.play()};
 			document.onkeyup = function(){up.play()};
             function setup() {
 soundFormats('wav');
