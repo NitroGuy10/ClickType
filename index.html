@@ -1,1 +1,46 @@
-<a href="temp.html">test page</a>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ClickType</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="Jumpy Game">
+		<meta name="keywords" content="Jumpy,NitroGuy,NitroGuy10">
+		<meta name="author" content="NitroGuy/NitroGuy10">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.sound.js"></script>
+        <script src="script.js"></script> 
+	</head>
+    <body>
+		<h1>ClickType</h1>
+		<p>
+			<textarea></textarea>
+		</p>
+		<p>
+			Volume
+			<input type="number" value="0.5" step="0.1" autocomplete="off" min="0" max="1" id="volume">
+		</p>
+		<p>
+			Stereo Width (doesn't do anything yet)
+			<input type="number" value="0.5" step="0.1" autocomplete="off" min="-1" max="1" id="stereoWidth">
+		</p>
+		<p>
+			WARNING: Reverb kinda sounds like trash at the moment
+		</p>
+		<p>
+			Reverb Volume
+			<input type="number" value="0" step="0.1" autocomplete="off" min="0" max="1" id="revVol">
+		</p>
+		<p>
+			Reverb Length
+			<input type="number" value="3" step="1" autocomplete="off" min="0" max="10" id="revLength">
+		</p>
+		<p>
+			Reverb Decay
+			<input type="number" value="2" step="1" autocomplete="off" min="0" max="100" id="revDecay">
+		</p>
+		<p>
+		<button onclick="getValues()">Apply</button>
+		</body>
+</html>
